@@ -1,8 +1,15 @@
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Sponsors from '@/components/Sponsors';
 
 export default function Home() {
   return (
-    <main>
-    <h1>TechOff!</h1>
-    </main>
-  )
+    <>
+      <Navbar />
+      <Hero />
+     <About />
+     <Sponsors />
+    </>
+  );
 }
