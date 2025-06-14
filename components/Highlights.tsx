@@ -12,6 +12,7 @@ const Highlights = () => {
 
   const handleWheel = (e: any) => {
     if (scrollContainerRef.current) {
+      e.preventDefault()
       scrollContainerRef.current.scrollLeft += e.deltaY;
     }
   };
@@ -38,7 +39,7 @@ const Highlights = () => {
       id: 4,
       src: Img1,
       alt: "Tech conference audience",
-       height: "h-96"
+       height: "h-[28rem]"
     },
     {
       id: 5,
@@ -55,9 +56,9 @@ const Highlights = () => {
   ];
 
   return (
-    <div className="py-16">
-      <div className="w-10/12 mx-auto">
-        <div className="mb-10 md:mb-12 md:w-10/12 flex flex-col gap-y-10">
+    <div className="py-16 overflow-x-hidden">
+      <div className="">
+        <div className="w-10/12 mx-auto mb-10 md:mb-12 md:w-10/12 flex flex-col gap-y-10">
           <p className="text-xl md:text-[2rem] leading-relaxed">
             Past years, TechOff was all about the power of the innovative 
             and creative minds, highlighting the individual and collective 
@@ -78,7 +79,7 @@ const Highlights = () => {
               {images.map((image) => (
                 <div 
                   key={image.id}
-                  className={`flex-shrink-0 w-80 ${image.height} rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300`}
+                  className={`flex-shrink-0 w-[24rem] ${image.height} rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300`}
                   >
                   <Image
                     src={image.src}
