@@ -58,7 +58,7 @@ const Highlights = () => {
   return (
     <div className="py-16 overflow-x-hidden">
       <div className="">
-        <div className="w-10/12 mx-auto mb-10 md:mb-12 md:w-10/12 flex flex-col gap-y-10">
+        <div className="w-full px-6 md:px-0 mx-auto mb-10 md:mb-12 md:w-10/12 flex flex-col gap-y-10">
           <p className="text-xl md:text-[2rem] leading-relaxed">
             Past years, TechOff was all about the power of the innovative 
             and creative minds, highlighting the individual and collective 

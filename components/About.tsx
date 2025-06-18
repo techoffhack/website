@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="w-10/12 mx-auto my-0 md:my-10 pt-0 pb-24 md:pt-10 md:pb-20">
+    <div className="w-full px-6 md:px-0 md:w-10/12 mx-auto my-0 md:my-10 pt-0 pb-24 md:pt-10 md:pb-20">
       <div className='grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10 '>
         <div className='flex flex-col gap-y-10 md:w-[97%] mt-5'>
             <h2 className='uppercase text-2xl md:text-5xl'>What is techoff?</h2>

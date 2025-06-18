@@ -18,8 +18,13 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+
     const toggleMenu = () => {
         setOpen((prevOpen) => !prevOpen);
+    };
+
+    const handleLinkClick = () => {
+        setOpen(false);
     };
 
     const navLinks = [
@@ -85,54 +90,60 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu */}
-                <div className=''>
-                    <div className="flex md:hidden flex-row justify-between items-center py-6 px-6">
-                        <div className="">
-                            <Link href="/">
-                            <Logo 
-                                    className="transition-colors duration-300"
-                                    fillColor={isScrolled ? '#000000' : '#F9F9F9'}
-                                />
-                            </Link>
-                        </div>
-                        <div className="flex items-center justify-center">
-                            <button onClick={toggleMenu}>
-                                {open ? (
-                                    <X className={`h-5 w-5 transition-colors duration-300 ${
-                                        isScrolled ? 'text-black' : 'text-white'
-                                    }`} />
-                                ) : (
-                                    <Menu className={`transition-colors duration-300 ${
-                                        isScrolled ? 'text-black' : 'text-[#F9F9F9]'
-                                    }`}/>
-                                )}
-                            </button>
-                        </div>
+                <div className="flex md:hidden flex-row justify-between items-center py-6 px-6">
+                    <div className="">
+                        <Link href="/">
+                        <Logo 
+                                className="transition-colors duration-300"
+                                fillColor={isScrolled ? '#000000' : '#F9F9F9'}
+                            />
+                        </Link>
                     </div>
-
-                    {open && (
-                        <div className="fixed left-0 top-0 w-full h-full z-30 origin-top bg-[#141633] text-[#F9F9F9] p-10">
-                            <div className="flex h-full flex-col">
-                                <div className="flex justify-between items-center">
-                                    <Logo className=''/>
-                                    <div className="cursor-pointer" onClick={toggleMenu}>
-                                        <X className="w-6 h-6 text-[#F9F9F9]" />
-                                    </div>
-                                </div>
-                                <div className="flex flex-col h-full justify-center items-center gap-4">
-                                    {navLinks.map((link, index) => {
-                                        return (
-                                            <div key={index} className="overflow-hidden">
-                                                <Link href={link.href} onClick={toggleMenu} className="uppercase text-2xl hover:opacity-70 transition-opacity">{link.title}</Link>
-                                            </div>
-                                        );
-                                    })}
-                                </div>
-                            </div>
-                        </div>
-                    )}
+                    <div className="flex items-center justify-center">
+                        <button onClick={toggleMenu}>
+                            {open ? (
+                                <X className={`h-5 w-5 transition-colors duration-300 ${
+                                    isScrolled ? 'text-black' : 'text-white'
+                                }`} />
+                            ) : (
+                                <Menu className={`transition-colors duration-300 ${
+                                    isScrolled ? 'text-black' : 'text-[#F9F9F9]'
+                                }`}/>
+                            )}
+                        </button>
+                    </div>
                 </div>
             </div>
+
+           {open && (
+                <div 
+                    className="fixed inset-0 top-0 left-0 w-screen h-screen z-[60] text-[#F9F9F9] p-10 bg-[#0e0f21]"
+                >
+                    <div className="relative flex h-full flex-col z-10">
+                        <div className="flex justify-between items-center">
+                            <Logo className=''/>
+                            <div className="cursor-pointer" onClick={toggleMenu}>
+                                <X className="w-6 h-6 text-[#F9F9F9]" />
+                            </div>
+                        </div>
+                        <div className="flex flex-col h-full justify-center items-center gap-4">
+                            {navLinks.map((link, index) => {
+                                return (
+                                    <div key={index} className="overflow-hidden">
+                                        <Link 
+                                            href={link.href} 
+                                            onClick={handleLinkClick} 
+                                            className="uppercase text-2xl hover:opacity-70 transition-opacity"
+                                        >
+                                            {link.title}
+                                        </Link>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
+            )}
         </nav>
     );
 };

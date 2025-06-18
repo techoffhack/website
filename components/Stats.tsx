@@ -23,7 +23,7 @@ const Stats = () => {
 
   return (
     <div className="bg-[#090909] text-white py-16">
-      <div className="w-10/12 mx-auto">
+      <div className="w-full px-6 md:px-0 md:w-10/12 mx-auto">
         <div className="mb-12">
           <p className="text-[#FFFFFF] bg-[#222222] w-10/12 md:w-[23%] px-4 text-center py-1.5 text-lg font-medium mb-10 tracking-wide">
             TECHOFF 2023 - 2024
