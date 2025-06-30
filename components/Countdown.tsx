@@ -41,7 +41,7 @@ const Countdown = ({ targetDate } : {targetDate: any}) => {
    <div className='py-10 md:py-16 px-6 w-full md:px-0 md:w-11/12 mx-auto'>
    <div className='flex flex-col md:flex-row items-center gap-y-10 gap-x-20'>
         <div className='md:w-5/12'>
-            <h3 className='text-3xl md:text-4xl font-medium capitalize'>Applications open may 31st</h3>
+            <h3 className='text-3xl md:text-4xl font-medium capitalize'>Applications close July 31st</h3>
         </div>
         <div className="flex flex-row gap-2 px-2 md:px-0 md:gap-6 md:w-8/12">
       <TimeBox value={timeLeft.days} label="DAYS" />

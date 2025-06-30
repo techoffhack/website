@@ -28,11 +28,11 @@ const Navbar = () => {
     };
 
     const navLinks = [
-        { title: "the vision", href: "/vision" },
-        { title: "speakers", href: "/speakers" },
-        { title: "about", href: "/about" },
-        { title: "highlights", href: "/highlights" },
-        { title: "media", href: "/media" },
+        { title: "the vision", href: "/#" },
+        { title: "speakers", href: "/#" },
+        { title: "about", href: "/#" },
+        { title: "highlights", href: "/#" },
+        { title: "media", href: "/#" },
     ];
 
     return (
@@ -72,7 +72,7 @@ const Navbar = () => {
                                 ? 'border-gray-300 text-black hover:bg-gray-50' 
                                 : 'border-[#F9F9F980] text-[#F9F9F9] hover:bg-[#F9F9F910]'
                         }`}>
-                            <Link href="/">
+                <Link href="https://olivine-cup-272.notion.site/22235754e3678092bf1cd814bba362c2?pvs=105">
                                 Join Sponsors
                             </Link>
                         </button>
@@ -82,7 +82,7 @@ const Navbar = () => {
                                 ? 'border-black bg-black text-white hover:bg-gray-800' 
                                 : 'border-[#F9F9F9] bg-[#F9F9F9] text-black hover:bg-gray-100'
                         }`}>
-                            <Link href="/">
+                <Link href="https://olivine-cup-272.notion.site/21d35754e3678042b13ece1465f15ba6?pvs=105">
                                 Apply Now
                             </Link>
                         </button>

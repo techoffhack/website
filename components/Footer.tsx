@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import { Facebook, Instagram, Mail } from "lucide-react";
+import { Instagram, Linkedin, Mail, Youtube } from "lucide-react";
 import { FooterLogo } from "@/app/constants/icons";
+import Link from "next/link";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -19,13 +20,13 @@ const Footer = () => {
             <div className="flex flex-col gap-y-5 md:gap-y-10 md:w-1/2">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold mb-2">
-                  Get the latest Technology news, <br/>
+                  Get the latest Technology news, <br />
                   Straight to Your Inbox!
                 </h2>
-               
+
               </div>
               <div className="flex flex-row md:w-8/12">
-                <input
+                {/* <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -38,19 +39,23 @@ const Footer = () => {
                   className="px-6 py-2 bg-[#f9f9f9] rounded-r-lg text-[#090909] font-medium "
                 >
                   Subscribe
-                </button>
+                </button> */}
+                <iframe src="https://techoffhack.substack.com/embed" width="480" height="320" className="border-[1px] border-white bg-white" frameBorder="0" scrolling="no"></iframe>
               </div>
 
               <div className="flex gap-4">
-               <div className="bg-[#6B727866] p-4 rounded-lg">
-               <Facebook size={20} />
-               </div>
-               <div className="bg-[#6B727866] p-4 rounded-lg">
-               <Instagram  size={20} />
-               </div>
-               <div className="bg-[#6B727866] p-4 rounded-lg">
-               <Mail size={20} />
-               </div>
+                <Link href="https://www.youtube.com/@techoffhack" className="bg-[#6B727866] p-4 rounded-lg">
+                  <Youtube size={20} />
+                </Link>
+                <Link href="https://www.linkedin.com/company/techoff-hack" className="bg-[#6B727866] p-4 rounded-lg">
+                  <Linkedin size={20} />
+                </Link>
+                <Link href="https://www.instagram.com/techoffhack/" className="bg-[#6B727866] p-4 rounded-lg">
+                  <Instagram size={20} />
+                </Link>
+                <Link href="mailto:thetechoffhack@gmail.com" className="bg-[#6B727866] p-4 rounded-lg">
+                  <Mail size={20} />
+                </Link>
               </div>
             </div>
             <div>
@@ -62,36 +67,36 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="https://techoffhack.substack.com" className="hover:text-white transition-colors">
                     Blog
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="hover:text-white transition-colors">
                     Media & press kit
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="mailto:thetechoffhack@gmail.com" className="hover:text-white transition-colors">
                     Contact us
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Techoff 2025</h3>
+              <h3 className="text-lg font-semibold mb-4">TECHOFF 2025</h3>
               <ul className="space-y-2 text-[#f9f9f9]">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="https://olivine-cup-272.notion.site/21d35754e3678042b13ece1465f15ba6?pvs=105" className="hover:text-white transition-colors">
                     Register as participant
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="https://olivine-cup-272.notion.site/22235754e3678092bf1cd814bba362c2?pvs=105" className="hover:text-white transition-colors">
                     Become a sponsor
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="hover:text-white transition-colors">
                     The vision
                   </a>
@@ -100,14 +105,14 @@ const Footer = () => {
                   <a href="#" className="hover:text-white transition-colors">
                     FAQs
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
         </div>
         <div className="border-t border-[#6B727866] pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-[#f9f9f9] mb-4 md:mb-0">© Techoffhack, 2025</div>
-          <div className="flex gap-6">
+          <div className="text-[#f9f9f9] mb-4 md:mb-0">© TECHOFFHACK, 2025</div>
+          {/* <div className="flex gap-6">
             <a
               href="#"
               className="text-[#f9f9f9] "
@@ -120,7 +125,7 @@ const Footer = () => {
             >
               Terms & conditions
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 
