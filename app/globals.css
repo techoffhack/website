@@ -7,3 +7,9 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+  @utility text-gradient {
+    background: linear-gradient(to bottom, #ffffff, #e4c0dd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

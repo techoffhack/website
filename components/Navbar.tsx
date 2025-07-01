@@ -1,21 +1,25 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from "next/link";
 import { Logo } from "@/app/constants/icons"
 import { Menu, X } from 'lucide-react';
+import  gsap  from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            setIsScrolled(scrollPosition > 650);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+    useGSAP(() => {
+        ScrollTrigger.create({
+            trigger: document.body,
+            start: "650px top",
+            onEnter: () => setIsScrolled(true),
+            onLeaveBack: () => setIsScrolled(false),
+            });
     }, []);
 
 
@@ -67,7 +71,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="flex flex-row justify-between items-center gap-x-6">
-                        <button className={`px-6 py-3 border uppercase text-lg rounded-sm transition-all duration-300 ${
+                        <button className={` px-6 py-3 border uppercase text-lg rounded-sm transition-all duration-300 ${
                             isScrolled 
                                 ? 'border-gray-300 text-black hover:bg-gray-50' 
                                 : 'border-[#F9F9F980] text-[#F9F9F9] hover:bg-[#F9F9F910]'
@@ -77,7 +81,7 @@ const Navbar = () => {
                             </Link>
                         </button>
 
-                        <button className={`px-6 py-3 border uppercase text-lg rounded-sm transition-all duration-300 ${
+                        <button className={` px-6 py-3 border uppercase text-lg rounded-sm transition-all duration-300 ${
                             isScrolled 
                                 ? 'border-black bg-black text-white hover:bg-gray-800' 
                                 : 'border-[#F9F9F9] bg-[#F9F9F9] text-black hover:bg-gray-100'
