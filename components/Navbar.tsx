@@ -121,7 +121,10 @@ const Navbar = () => {
 
            {open && (
                 <div 
-                    className="fixed inset-0 top-0 left-0 w-screen h-screen z-[60] text-[#F9F9F9] p-10 bg-[#0e0f21]"
+                    className="fixed inset-0 top-0 left-0 w-screen h-screen z-[60] text-[#F9F9F9] p-10"
+                    style={{
+                        background: 'linear-gradient(135deg, #000000 0%, #1a1a1a 100%)'
+                      }}
                 >
                     <div className="relative flex h-full flex-col z-10">
                         <div className="flex justify-between items-center">

@@ -13,7 +13,7 @@ const Hero = () => {
 const container = useRef<HTMLDivElement>(null)
 
   useGSAP(() => {
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({delay: 4.5});
     
     const titleSplit = new SplitText('.title', {type: 'chars, words', charsClass:'text-gradient'})
     const textSplit = new SplitText('.hero-text', {type: 'chars, words'})
