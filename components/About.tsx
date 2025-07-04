@@ -10,7 +10,13 @@ const About = () => {
   const containerRef = useRef(null)
 
   useGSAP(() => {
-    const tl = gsap.timeline({ delay: 2.5 })
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: 'top 80%',
+        end: 'bottom 20%',
+      }
+    })
     
     const aboutTitleSplit = new SplitText('.about-title', {type: 'chars, words'})
     const aboutTextSplit = new SplitText('.about-text', {type: 'words'})

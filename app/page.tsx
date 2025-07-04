@@ -9,7 +9,7 @@ import Countdown from '@/components/Countdown';
 import Footer from '@/components/Footer';
 
 export default function Home() {
-  const targetDate = new Date('2025-06-28T00:00:00');
+  const targetDate = new Date('2025-07-28T00:00:00');
 
   return (
     <>
