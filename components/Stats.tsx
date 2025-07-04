@@ -123,7 +123,7 @@ const Stats = () => {
           <p ref={badgeRef} className="text-[#FFFFFF] bg-[#222222] w-10/12 md:w-[23%] px-4 text-center py-1.5 text-lg font-medium mb-10 tracking-wide">
             TECHOFF 2023 - 2024
           </p>
-          
+
           <div className="flex flex-col md:flex-row gap-16">
             <div className='md:w-[60%]'>
               <h2 ref={headingRef} className="text-2xl md:text-4xl font-medium leading-normal text-[#FFFFFF]">
@@ -155,7 +155,7 @@ const Stats = () => {
            </div>
           <div className="bg-gray-200 rounded-lg h-56 flex items-center justify-center">
            </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

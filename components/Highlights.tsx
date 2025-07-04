@@ -1,14 +1,15 @@
 "use client";
 import React, { useRef } from "react";
-// Make sure your image paths are correct
-import Img1 from "../app/assets/Speaker.png";
-import Img2 from "../app/assets/Coat.png";
-import Img3 from "../app/assets/Ship.png";
-import Img4 from "../app/assets/Developers.png";
 import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Img1 from '../app/assets/past-event-1.jpg';
+import Img2 from '../app/assets/TECHOFF-37.jpg';
+import Img3 from '../app/assets/TECHOFF-77.jpg';
+import Img4 from '../app/assets/TECHOFF-120.jpg';
+import Img5 from '../app/assets/TECHOFF-101.jpg';
+import Img6 from '../app/assets/TECHOFF-128.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,7 +69,7 @@ const Highlights = () => {
   const images = [
     {
       id: 1,
-      src: Img4,
+      src: Img3,
       alt: "Concert crowd with stage lights",
       height: "h-60",
     },
@@ -76,12 +77,32 @@ const Highlights = () => {
       id: 2,
       src: Img2,
       alt: "Concert stage with dramatic lighting",
-      height: "h-84",
+      height: "h-84"
     },
-    { id: 3, src: Img3, alt: "Microphone on stage", height: "h-68" },
-    { id: 4, src: Img1, alt: "Tech conference audience", height: "h-[28rem]" },
-    { id: 5, src: Img2, alt: "Speaker presenting", height: "h-68" },
-    { id: 6, src: Img4, alt: "Tech event networking", height: "h-80" },
+    {
+      id: 3,
+      src: Img1,
+      alt: "Microphone on stage",
+      height: "h-68"
+    },
+    {
+      id: 4,
+      src: Img4,
+      alt: "Tech conference audience",
+      height: "h-[28rem]"
+    },
+    {
+      id: 5,
+      src: Img5,
+      alt: "Speaker presenting",
+      height: "h-68"
+    },
+    {
+      id: 6,
+      src: Img6,
+      alt: "Tech event networking",
+      height: "h-80"
+    }
   ];
 
   return (
@@ -119,11 +140,11 @@ const Highlights = () => {
                   placeholder="blur"
                 />
               </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

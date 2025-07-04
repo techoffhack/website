@@ -44,12 +44,12 @@ const Sponsors = () => {
           <HeadlineSponsorLogo />
         </div>
       </div>
-      
+
       <div className="">
         <div className="grid grid-cols-2">
           <div className="sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
             <div className="absolute top-0 left-0 bg-[#DADADA] text-gray-500 text-xs md:text-sm font-medium px-3 py-1.5 md:px-4 md:py-2">
-              GOLD SPONSOR
+              GOLD SPONSORS
             </div>
             <GoldSponsorLogo />
           </div>
@@ -58,24 +58,42 @@ const Sponsors = () => {
           </div>
         </div>
       </div>
-      
+
       <div>
         <div className="grid grid-cols-4">
-          <div className="sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
             <div className="absolute top-0 left-0 bg-[#DADADA] text-gray-500 text-xs md:text-sm font-medium px-3 py-1.5 md:px-4 md:py-2">
-              GOLD SPONSOR
+              BRONZE SPONSORS
             </div>
-            <Logo fillColor='#000000' />
+            THIS
           </div>
-          <div className="sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
-           
-            <Logo fillColor='#000000' />
+          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+            COULD
           </div>
-          <div className="sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
-            <Logo fillColor='#000000' />
+          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+            BE
           </div>
-          <div className="sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
-            <Logo fillColor='#000000' />
+          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+            YOU
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="grid grid-cols-4">
+          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+            <div className="absolute top-0 left-0 bg-[#DADADA] text-gray-500 text-xs md:text-sm font-medium px-3 py-1.5 md:px-4 md:py-2">
+              PARTNERS
+            </div>
+            THIS
+          </div>
+          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+            COULD
+          </div>
+          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+            BE
+          </div>
+          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+            YOU
           </div>
         </div>
       </div>
