@@ -126,14 +126,14 @@ const Stats = () => {
 
           <div className="flex flex-col md:flex-row gap-16">
             <div className='md:w-[60%]'>
-              <h2 ref={headingRef} className="text-2xl md:text-4xl font-medium leading-normal text-[#FFFFFF]">
+              <h2 className="text-2xl md:text-4xl font-medium leading-normal text-[#FFFFFF]">
                 TechOff is a reality-show-style challenge series that spotlights 
                 emerging tech talent across Nigeria and Africa. We connect 
                 raw talent with mentorship, media visibility.
               </h2>
             </div>
             
-            <div ref={statsRef} className="grid grid-cols-2 gap-y-3 gap-x-16 items-end">
+            <div className="grid grid-cols-2 gap-y-3 gap-x-16 items-end">
               {stats.map((stat, index) => (
                 <div key={index} className="">
                   <div className="stat-number text-4xl md:text-8xl font-medium text-[#F9F9F999] mb-2">
@@ -148,14 +148,14 @@ const Stats = () => {
           </div>
         </div>
         
-        <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
           <div className="bg-gray-200 rounded-lg h-56 flex items-center justify-center">
           </div>
           <div className="bg-gray-200 rounded-lg h-56 flex items-center justify-center">
            </div>
           <div className="bg-gray-200 rounded-lg h-56 flex items-center justify-center">
            </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

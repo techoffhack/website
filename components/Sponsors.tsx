@@ -61,38 +61,38 @@ const Sponsors = () => {
 
       <div>
         <div className="grid grid-cols-4">
-          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+          <div className="sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
             <div className="absolute top-0 left-0 bg-[#DADADA] text-gray-500 text-xs md:text-sm font-medium px-3 py-1.5 md:px-4 md:py-2">
               BRONZE SPONSORS
             </div>
             THIS
           </div>
-          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+          <div className="sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
             COULD
           </div>
-          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+          <div className="sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
             BE
           </div>
-          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+          <div className=" sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
             YOU
           </div>
         </div>
       </div>
       <div>
         <div className="grid grid-cols-4">
-          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+          <div className="sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
             <div className="absolute top-0 left-0 bg-[#DADADA] text-gray-500 text-xs md:text-sm font-medium px-3 py-1.5 md:px-4 md:py-2">
               PARTNERS
             </div>
             THIS
           </div>
-          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+          <div className="sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
             COULD
           </div>
-          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+          <div className="sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
             BE
           </div>
-          <div className="bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+          <div className="sponsor bg-white border border-[#DADADA] p-4 md:p-8 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
             YOU
           </div>
         </div>

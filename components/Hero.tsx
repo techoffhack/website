@@ -118,11 +118,11 @@ const container = useRef<HTMLDivElement>(null)
         
         <div className="flex flex-row justify-between items-center gap-x-6 md:gap-x-6">
           <button className="button px-3 md:px-6 py-3 border border-[#F9F9F980] text-[#F9F9F9] uppercase text-base md:text-xl rounded-sm hover:bg-[#F9F9F910] transition-colors">
-            <Link href="https://olivine-cup-272.notion.site/22235754e3678092bf1cd814bba362c2?pvs=105">Become a Sponsor</Link>
+            <Link target='_blank'  href="https://olivine-cup-272.notion.site/22235754e3678092bf1cd814bba362c2?pvs=105">Become a Sponsor</Link>
           </button>
 
           <button className="button px-3 md:px-6 py-3 border border-[#F9F9F9] bg-[#F9F9F9] text-black uppercase text-base md:text-xl rounded-sm hover:bg-gray-100 transition-colors">
-            <Link href="/">Register</Link>
+            <Link target='_blank' href="https://olivine-cup-272.notion.site/21d35754e3678042b13ece1465f15ba6">Register</Link>
           </button>
         </div>
       </div>
