@@ -21,8 +21,6 @@ const Highlights = () => {
 
   useGSAP(
     () => {
-      
-
       if (pinningContainerRef.current && imagesRef.current) {
         const scrollWidth =
           imagesRef.current.scrollWidth - imagesRef.current.clientWidth;
