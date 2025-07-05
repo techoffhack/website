@@ -36,7 +36,7 @@ const Stats = () => {
       }
     });
 
-    if(statsRef.current) {
+    if (statsRef.current) {
       gsap.from(statsRef.current.children, {
         opacity: 0,
         y: 40,
@@ -69,19 +69,19 @@ const Stats = () => {
         const numberElement = statElement.querySelector('.stat-number') as HTMLElement | null;
         if (!numberElement) return;
         const finalNumber = numberElement.textContent || "";
-        
+
         const numericValue = parseInt(finalNumber.replace(/[^0-9]/g, ''));
-        
+
         if (!isNaN(numericValue)) {
           const suffix = finalNumber.replace(/[0-9]+/, '');
           numberElement.textContent = `0${suffix}`;
-          
+
           gsap.to({ value: 0 }, {
             value: numericValue,
             duration: 1.5,
             ease: "power2.out",
             delay: index * 0.1,
-            onUpdate: function() {
+            onUpdate: function () {
               const currentValue = Math.floor(this.targets()[0].value);
               numberElement.textContent = `${currentValue}${suffix}`;
             },
@@ -127,12 +127,10 @@ const Stats = () => {
           <div className="flex flex-col md:flex-row gap-16">
             <div className='md:w-[60%]'>
               <h2 className="text-2xl md:text-4xl font-medium leading-normal text-[#FFFFFF]">
-                TechOff is a reality-show-style challenge series that spotlights 
-                emerging tech talent across Nigeria and Africa. We connect 
-                raw talent with mentorship, media visibility.
+                For us, it's not just about being seen; it's about growing in real time. Here is our impact in the short time we've been around.
               </h2>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-y-3 gap-x-16 items-end">
               {stats.map((stat, index) => (
                 <div key={index} className="">
@@ -147,15 +145,15 @@ const Stats = () => {
             </div>
           </div>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
           <div className="bg-gray-200 rounded-lg h-56 flex items-center justify-center">
           </div>
           <div className="bg-gray-200 rounded-lg h-56 flex items-center justify-center">
-           </div>
+          </div>
           <div className="bg-gray-200 rounded-lg h-56 flex items-center justify-center">
-           </div>
-        </div>
+          </div>
+        </div> */}
       </div>
     </div>
   );
