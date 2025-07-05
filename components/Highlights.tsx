@@ -138,6 +138,7 @@ const Highlights = () => {
                   alt={image.alt}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   placeholder="blur"
+                  priority
                 />
               </div>
               ))}
