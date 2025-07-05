@@ -1,5 +1,6 @@
 @import "tailwindcss"; 
 
+
 .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -7,3 +8,16 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+  @utility text-gradient {
+    background: linear-gradient(to bottom, #ffffff, #e4c0dd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50; 
+}

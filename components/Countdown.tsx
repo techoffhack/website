@@ -1,5 +1,10 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Countdown = ({ targetDate } : {targetDate: any}) => {
   const [timeLeft, setTimeLeft] = useState({
@@ -8,6 +13,7 @@ const Countdown = ({ targetDate } : {targetDate: any}) => {
     minutes: 0,
     seconds: 0
   });
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -27,6 +33,23 @@ const Countdown = ({ targetDate } : {targetDate: any}) => {
     return () => clearInterval(timer);
   }, [targetDate]);
 
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: 'top 80%',
+        end: 'bottom 20%',
+      }
+    });
+
+    tl.from(containerRef.current, {
+      opacity: 0,
+      scale: 0.8,
+      duration: 1,
+      ease: 'power2.out',
+    })
+  });
+
   const TimeBox = ({ value, label }: {value: number; label: string}) => (
     <div className="bg-[#090909] rounded-lg p-4 w-[4.5rem] md:w-36 h-[4.25rem] md:h-[6.5rem] text-center">
       <div className="text-base md:text-[2rem] font-medium text-[#FCFDF7]">
@@ -37,7 +60,7 @@ const Countdown = ({ targetDate } : {targetDate: any}) => {
   );
 
   return (
-   <div className='absolute mt-14 md:mt-24 z-10 left-[4%] md:left-[8%] w-11/12 md:w-10/12 bg-[#e0e0e0] rounded-2xl'>
+   <div ref={containerRef} className='absolute mt-14 md:mt-24 z-10 left-[4%] md:left-[8%] w-11/12 md:w-10/12 bg-[#e0e0e0] rounded-2xl'>
    <div className='py-10 md:py-16 px-6 w-full md:px-0 md:w-11/12 mx-auto'>
    <div className='flex flex-col md:flex-row items-center gap-y-10 gap-x-20'>
         <div className='md:w-5/12'>
