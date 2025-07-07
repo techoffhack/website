@@ -65,7 +65,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://techoff.kit.com" className="hover:text-white transition-colors">
+                  <a href="https://blog.techoffhack.com" className="hover:text-white transition-colors">
                     Blog
                   </a>
                 </li>
