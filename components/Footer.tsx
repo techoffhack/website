@@ -8,8 +8,7 @@ const Footer = () => {
   const [email, setEmail] = useState("");
 
   const handleSubscribe = () => {
-    console.log("Subscribing email:", email);
-    setEmail("");
+    window.location.href = `https://techoff.kit.com/f7705b4763`;
   };
 
   return (
@@ -32,15 +31,14 @@ const Footer = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-4 py-2 rounded-l-lg bg-[#6B727866] border border-[#6B727866] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Email"
-                />
+                /> */}
 
                 <button
                   onClick={handleSubscribe}
-                  className="px-6 py-2 bg-[#f9f9f9] rounded-r-lg text-[#090909] font-medium "
+                  className="px-6 py-2 bg-[#f9f9f9] rounded-lg text-[#090909] font-medium cursor-pointer"
                 >
                   Subscribe
-                </button> */}
-                <iframe src="https://techoffhack.substack.com/embed" width="480" height="320" className="border-[1px] border-white bg-white" frameBorder="0" scrolling="no"></iframe>
+                </button>
               </div>
 
               <div className="flex gap-4">
@@ -67,7 +65,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://techoffhack.substack.com" className="hover:text-white transition-colors">
+                  <a href="https://techoff.kit.com" className="hover:text-white transition-colors">
                     Blog
                   </a>
                 </li>
