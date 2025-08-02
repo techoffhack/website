@@ -64,7 +64,7 @@ export default function Home() {
       );
   })
 
-  const targetDate = new Date('2025-08-8T00:00:00');
+  const targetDate = new Date('2025-08-08T00:00:00');
 
   return (
     <>
